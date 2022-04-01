@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="502.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPart">
+   <children>
+      <Label layoutX="159.0" layoutY="58.0" text="Add Part">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="inHouseButton" layoutX="98.0" layoutY="102.0" mnemonicParsing="false" onAction="#onClickInHouse" selected="true" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="outsourcedButton" layoutX="241.0" layoutY="102.0" mnemonicParsing="false" onAction="#onClickOutsourced" text="Outsourced" toggleGroup="$group1" />
+      <TextField fx:id="addPartName" layoutX="126.0" layoutY="203.0" />
+      <TextField fx:id="addPartInv" layoutX="126.0" layoutY="245.0" />
+      <TextField fx:id="addPartCost" layoutX="126.0" layoutY="287.0" />
+      <TextField fx:id="addPartMin" layoutX="126.0" layoutY="329.0" />
+      <TextField fx:id="addPartMax" layoutX="126.0" layoutY="371.0" />
+      <TextField fx:id="addPartMachineId" layoutX="126.0" layoutY="413.0" />
+      <Label layoutX="131.0" layoutY="186.0" text="Name" />
+      <Label layoutX="133.0" layoutY="228.0" text="Inv" />
+      <Label layoutX="131.0" layoutY="270.0" text="Price/Cost" />
+      <Label layoutX="131.0" layoutY="312.0" text="Min" />
+      <Label layoutX="130.0" layoutY="354.0" text="Max" />
+      <Label fx:id="machineIdLabel" layoutX="128.0" layoutY="396.0" text="Machine ID" />
+      <Button layoutX="115.0" layoutY="460.0" mnemonicParsing="false" onAction="#onSaveAddPart" prefHeight="25.0" prefWidth="52.0" text="Save" />
+      <Button layoutX="241.0" layoutY="460.0" mnemonicParsing="false" onAction="#onCancelAddPart" text="Cancel" />
+      <TextField fx:id="addPartID" disable="true" editable="false" layoutX="127.0" layoutY="161.0" text="Auto-generated ID" />
+      <Label layoutX="135.0" layoutY="138.0" text="ID" />
+      <Label fx:id="nameLabel" layoutX="14.0" layoutY="207.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="minLabel" layoutX="14.0" layoutY="333.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="maxLabel" layoutX="14.0" layoutY="375.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="machineIdLabels" layoutX="14.0" layoutY="417.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="invLabel" layoutX="14.0" layoutY="249.0" prefHeight="17.0" prefWidth="113.0" />
+      <Label fx:id="priceLabel" layoutX="14.0" layoutY="291.0" prefHeight="17.0" prefWidth="113.0" />
+   </children>
+</AnchorPane>
